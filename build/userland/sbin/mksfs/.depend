@@ -1,0 +1,19 @@
+$(MYBUILDDIR)/mksfs.o: \
+ mksfs.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdint.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/assert.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h \
+ $(INSTALLTOP)/include/err.h \
+ $(INSTALLTOP)/include/sys/cdefs.h \
+ support.h \
+ $(INSTALLTOP)/include/kern/sfs.h \
+ disk.h
+$(MYBUILDDIR)/support.o: \
+ support.c

@@ -1,0 +1,2 @@
+$(MYBUILDDIR)/support.o: \
+ ../../sbin/mksfs/support.c
